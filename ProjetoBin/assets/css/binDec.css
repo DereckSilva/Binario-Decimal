@@ -1,0 +1,53 @@
+body{
+    position: absolute;
+    height: 100px;
+    background-color: rgb(156, 171, 240);
+}
+.cabecalho{
+    margin:0px auto;
+    text-align: center;
+    border-radius: 5px;
+    width: 600px;
+    top: 12em;
+    left: 25em;
+    position: relative;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(21, 63, 250);
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: #000000
+}
+
+button{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    width: 150px;
+    color:rgb(21, 63, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(21, 63, 250);
+    background-color: #ffff;
+    background-color: transparent;
+}
+
+#conteudoMain{
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+    margin: 0px auto;
+    position: relative;
+    top: 13em;
+    left: 25em;
+}
+
+select{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
