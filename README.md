@@ -1,10 +1,10 @@
-<div style="text-align:center">
+<div align="center">
 <h1>Conversor</h1>
 </div>
-<div style="text-align:center">
-<h1>O que é o projeto <img src="https://cdn-icons-png.flaticon.com/32/3850/3850203.png"></h1>
+<div align="center">
+<h1 >O que é o projeto <img src="https://cdn-icons-png.flaticon.com/32/3850/3850203.png"></h1>
 </div>
-<div style="text-align:center">
+<div>
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
