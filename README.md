@@ -1,10 +1,10 @@
-<div style="text-align:center">
+<div align="center">
 <h1>Conversor</h1>
 </div>
-<div style="text-align:center">
-<h1>O que é o projeto <img src="https://cdn-icons-png.flaticon.com/32/3850/3850203.png"></h1>
+<div align="center">
+<h1 >O que é o projeto <img src="https://cdn-icons-png.flaticon.com/32/3850/3850203.png"></h1>
 </div>
-<div style="text-align:center">
+<div>
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
@@ -15,13 +15,15 @@
 
 <div>
 <h4>Colocar os conhecimentos em prática visando sempre o aperfeiçoamento do projeto.</h4>
-</div><br>
+</div>
+
+- Ideia de Projeto [Bin2Dec](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 
 ### Features
 
 - [x] Conversor Binário para Decimal
 - [ ] Conversor Binário para Octal
-- [ ] Conversor Binário para Hexadecima
+- [ ] Conversor Binário para Hexadecimal
 - [ ] Conversor Decimal para Binário
 - [ ] Conversor Decimal para Octal
 - [ ] Conversor Decimal para Hexadecimal
@@ -30,11 +32,11 @@
 <div>
 <h4> Projeto simples utilizando HTML, CSS e JavaScript para fazer um conversor de números. Inicialmente com a conversão de Binário para Decimal. 
 </h4>
-</div><br>
+</div>
 
 ### Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+<h4>As seguintes ferramentas foram usadas na construção do projeto:</h4>
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
@@ -43,7 +45,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # Autor
 <img src="https://avatars.githubusercontent.com/u/70153036?s=150&u=8e03e272b1a884652e7db30666f99a0e01b689c0&v=4">
 
-Feito com ❤️ por Dereck Silva 👋🏽 Entre em contato!
+Feito com ❤️ por Dereck Silva 👋🏾 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Dereck-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dereck-silva/)](https://www.linkedin.com/in/dereck-silva/) 
 [![Gmail Badge](https://img.shields.io/badge/-viniciusdereck39@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:viniciusdereck39@gmail.com)](mailto:viniciusdereck39@gmail.com)
