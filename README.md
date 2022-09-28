@@ -34,7 +34,7 @@
 
 ### Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+<h4>As seguintes ferramentas foram usadas na construção do projeto:</h4>
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
