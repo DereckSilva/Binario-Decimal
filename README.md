@@ -21,7 +21,7 @@
 
 - [x] Conversor Binário para Decimal
 - [ ] Conversor Binário para Octal
-- [ ] Conversor Binário para Hexadecima
+- [ ] Conversor Binário para Hexadecimal
 - [ ] Conversor Decimal para Binário
 - [ ] Conversor Decimal para Octal
 - [ ] Conversor Decimal para Hexadecimal
