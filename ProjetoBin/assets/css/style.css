@@ -20,7 +20,13 @@ main > nav > ul > a:hover > li{
 }
 nav{
     position: relative;
-    top: 12em;
+    top: 5em;
     left: 30em;
     text-align: center;
+}
+.cabecalho{
+    text-align: center;
+    position: relative;
+    left: 31em;
+    color:rgba(255, 255, 255)
 }
