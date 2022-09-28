@@ -17,6 +17,8 @@
 <h4>Colocar os conhecimentos em prática visando sempre o aperfeiçoamento do projeto.</h4>
 </div>
 
+- Ideia de Projeto [Bin2Dec](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
+
 ### Features
 
 - [x] Conversor Binário para Decimal
