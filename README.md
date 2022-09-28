@@ -15,7 +15,7 @@
 
 <div>
 <h4>Colocar os conhecimentos em prática visando sempre o aperfeiçoamento do projeto.</h4>
-</div><br>
+</div>
 
 ### Features
 
@@ -30,7 +30,7 @@
 <div>
 <h4> Projeto simples utilizando HTML, CSS e JavaScript para fazer um conversor de números. Inicialmente com a conversão de Binário para Decimal. 
 </h4>
-</div><br>
+</div>
 
 ### Tecnologias
 
@@ -43,7 +43,7 @@
 # Autor
 <img src="https://avatars.githubusercontent.com/u/70153036?s=150&u=8e03e272b1a884652e7db30666f99a0e01b689c0&v=4">
 
-Feito com ❤️ por Dereck Silva 👋🏽 Entre em contato!
+Feito com ❤️ por Dereck Silva 👋🏾 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Dereck-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dereck-silva/)](https://www.linkedin.com/in/dereck-silva/) 
 [![Gmail Badge](https://img.shields.io/badge/-viniciusdereck39@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:viniciusdereck39@gmail.com)](mailto:viniciusdereck39@gmail.com)
