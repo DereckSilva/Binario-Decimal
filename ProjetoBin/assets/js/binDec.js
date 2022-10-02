@@ -1,3 +1,4 @@
+//refatorar código
 function criaMensagemErro(mensagem){
     removeMensagem() 
 
