@@ -1,4 +1,5 @@
-//refatorar código
+import { conversor } from "./validacao.js"
+
 function criaMensagemErro(mensagem){
     removeMensagem() 
 
@@ -25,14 +26,16 @@ function criaElementoDec(valorDec){
 
 function removeMensagem(){
     let conteudoPai = document.querySelector("#conteudoFilho")
+    console.log(conteudoPai)
     if(conteudoPai.childNodes.length > 0){
-        for(child of conteudoPai.children){
+        for(let child of conteudoPai.children){
             child.remove()
         }
     }
 }
 
-function validaBin(){
+let validaBin = document.querySelector("#buttonEnviaBin")
+validaBin.addEventListener('click', function(){
     let valorBinario = document.querySelector("#valueBin").value
     let regEx = /2|3|4|5|6|7|8|9/
 
@@ -47,9 +50,11 @@ function validaBin(){
         criaMensagemErro('Por Favor! Digite apenas os valores 0 e 1.')
     }else{
         limpa()
-        criaElementoDec(parseInt(valorBinario, 2))
+        const validacao = new conversor(valorBinario)
+        let valor = validacao.converteNumero(2)
+        criaElementoDec(valor)
     }
-}
+})
 
 function limpa(){
     let valorBinario = document.querySelector("#valueBin")

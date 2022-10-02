@@ -1,10 +1,15 @@
-function obtemValor(numero){
+function conversor(numero){
     this.numero = numero
+
 }
 
-//escrever funções padrões queserão utilizadas nos demais arquivos js
-obtemValor.prototype.validaCampo = function(value){
-    return value
+conversor.prototype.converteNumero = function(tipoConversor){
+    switch(tipoConversor){
+        case 2:
+            return parseInt(this.numero, tipoConversor)
+        default:
+
+    }
 }
 
-export { obtemValor }
+export { conversor }
