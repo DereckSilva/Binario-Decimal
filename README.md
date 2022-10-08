@@ -22,7 +22,7 @@
 ### Features
 
 - [x] Conversor Binário para Decimal
-- [ ] Conversor Binário para Octal
+- [x] Conversor Binário para Octal
 - [ ] Conversor Binário para Hexadecimal
 - [ ] Conversor Decimal para Binário
 - [ ] Conversor Decimal para Octal
