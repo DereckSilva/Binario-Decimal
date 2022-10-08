@@ -1,10 +1,9 @@
-import { conversor } from "./validacao.js"
-
-const valorBin = document.querySelector("#binOct")
-const validacao = new conversor(10)
-
+import { conversorNumerico } from "./validacao.js"
 
 const button = document.querySelector("#conversor")
 button.addEventListener('click', () => {
-    console.log(validacao.converteNumero(valorBin.value))
+
+    const conversor = new conversorNumerico("binOct", 8, "conteudoPai", "octal")
+
+    conversor.validacaoBin()
 })

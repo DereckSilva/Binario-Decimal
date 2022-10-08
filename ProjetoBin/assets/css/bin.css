@@ -53,9 +53,9 @@ select{
 }
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(21, 63, 250);
     font-size: 1.5em;
 }
 a:hover{
-    color: rgb(21, 63, 250);
+    color: rgb(255, 255, 255);
 }

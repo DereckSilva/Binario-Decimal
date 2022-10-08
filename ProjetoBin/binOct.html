@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bin.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/709/709388.png">
     <title>Bin2Oct</title>
 </head>
 <body>
-    <head>
+    <header class="cabecalho">
         <h1>
             Conversor Binário Octal
         </h1>
-    </head>
-    <main>
-        <input type="text" id="binOct" value="" placeholder="Ex: 1111">
-        <button id="conversor">Converter</button>
+        <h4>Esse conversor tem objetivo de identificar os números binários e converter para octal.</h4>
+    </header>
+    <main id="conteudoMain">
+        <input type="text" id="binOct" value="" placeholder="Ex: 1111"><br><br>
+        <button id="conversor">Converter</button><br><br>
+        <a type="button" id="home" href="./index.html">Home</a>
+        <p id="conteudoPai"></p>
     </main>
     <script src="./assets/js/binOct.js" type="module"></script>
 </body>
