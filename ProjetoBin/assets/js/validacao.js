@@ -47,18 +47,26 @@ export class conversorNumerico
         return conteudoPai.append(novoElemento)
     }
 
-    //identifica a base e converte o número
-    converteNum(){
+    //identifica a base e converte o número de binário para outro
+    converteNumBinario(){
         const valorBinario = document.querySelector(`#${this.elementoBin}`).value
         switch(this.numBase){
             case 2:
                 return parseInt(valorBinario,this.numBase)
             case 8:
                 return Number(parseInt(valorBinario, 2)).toString(this.numBase)
+            case 16:
+                return Number(parseInt(valorBinario, 2)).toString(this.numBase)
              default:
             //mensagem temporária
             return "não existe"
         }
+    }
+
+    //identifica a base e converte o número decimal para outra base
+    converteNumDecimal(){
+        const valorBinario = document.querySelector(`#${this.elementoBin}`).value
+        //switch()
     }
 
     //remove mensagens anteriores
