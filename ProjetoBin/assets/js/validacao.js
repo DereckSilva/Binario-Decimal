@@ -42,7 +42,7 @@ export class conversorNumerico
         const novoElemento = document.createElement('h4')
         novoElemento.setAttribute("id", "binario")
 
-        novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNum()}`
+        novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumBinario()}`
     
         return conteudoPai.append(novoElemento)
     }
