@@ -24,9 +24,9 @@
 - [x] Conversor Binário para Decimal
 - [x] Conversor Binário para Octal
 - [x] Conversor Binário para Hexadecimal
-- [ ] Conversor Decimal para Binário
-- [ ] Conversor Decimal para Octal
-- [ ] Conversor Decimal para Hexadecimal
+- [x] Conversor Decimal para Binário
+- [x] Conversor Decimal para Octal
+- [x] Conversor Decimal para Hexadecimal
 
 ### Sobre
 <div>
