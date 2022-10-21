@@ -56,7 +56,6 @@ export class conversorNumerico
         const valorBinario = document.querySelector(`#${this.elemento}`).value
         switch(Number(this.baseNumero)){
             case 2:
-                console.log('o')
                 return valorBinario
             case 10:
                 return parseInt(valorBinario,this.baseBruta)
