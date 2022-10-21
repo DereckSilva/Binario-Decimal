@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bin.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/709/709388.png">
-    <title>Bin2Dec</title>
+    <title>Bin-Dec</title>
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Conversor</h1>
-        <h3>Escolha uma das opções abaixo:</h3>
+        <h1>Conversor de números Binários</h1>
+        <h4>Esse conversor tem objetivo de identificar os números binários e converter para decimal.</h4>
     </header>
-    <main>
-        <nav>
-            <ul>
-                <a href="./binDec.html" class="link" >
-                    <li>Binario <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Decimal</li>
-                </a>
-                <a href="./binOct.html" class="link" >
-                    <li>Binário <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Octal</li>
-                </a>
-                <a href="./binHex.html" class="link">
-                    <li>Binário <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Hexadecimal</li>
-                </a>
-                <a href="" class="link">
-                    <li>Decimal <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Binário</li>
-                </a>
-                <a href="" class="link">
-                    <li>Decimal <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Octal</li>
-                </a>
-                <a href="" class="link">
-                    <li>Decimal <img src="https://cdn-icons-png.flaticon.com/16/724/724927.png" alt=""> Hexadecimal</li>
-                </a>
-            </ul>
-        </nav>
+    <main id="conteudoMain">  
+        <input type="text" id="valueBin" value="" placeholder="Ex: 011101"><br><br>
+        <button id="buttonEnviaBin">Converter</button><br><br>
+        <select id="baseBruta">
+            <option value=""></option>
+            <option value="2">Binário</option>
+            <option value="10">Decimal</option>
+        </select>
+
+        <select id="baseConversora">
+            <option value=""></option>
+            <option value="2" class="tipoConvert" data-conv="binário">Binário</option>
+            <option value="10" class="tipoConvert" data-conv="decimal">Decimal</option>
+            <option value="8" class="tipoConvert" data-conv="octal">Octal</option>
+            <option value="16" class="tipoConvert" data-conv="hexadecimal">Hexadecimal</option>
+        </select>
+        <a type="button" id="home" href="./index.html">Home</a>
+        <div id="conteudoPai"></div>
     </main>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js" type="module"></script>
 </body>
 </html>

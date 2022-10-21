@@ -1,9 +1,22 @@
-let links = document.querySelectorAll(".link")
+import { conversorNumerico } from "./validacao.js"
 
-//ativar apenas os links que possuem paginas 
-links.forEach((element) => {
+const button = document.querySelector("#buttonEnviaBin")
+const baseBruta = document.querySelector("#baseBruta")
+const baseConversora = document.querySelector("#baseConversora")
+let descricao = document.querySelectorAll(".tipoConvert")
 
-    if(element.href.includes("index.html")){
-        element.style.display = 'none'
-    }
+let descricaoConvert = []
+
+descricao.forEach((element)=>{
+    element.addEventListener('click', ()=>{
+        descricaoConvert.pop()
+        return descricaoConvert.push(element.dataset.conv)
+    })
+})
+
+button.addEventListener('click', () => {
+
+    const conversor = new conversorNumerico("valueBin", baseBruta.value, "conteudoPai", descricaoConvert[0], baseConversora.value)
+
+    conversor.validacaoBin()
 })

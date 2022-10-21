@@ -1,21 +1,22 @@
 export class conversorNumerico
 {
-    constructor(elementoBinario, base, elementoPai, tipoConversao){
-        this.elementoBin = elementoBinario
-        this.numBase = base
+    constructor(elemento, baseBruta, elementoPai, tipoConversao, baseNumero){
+        this.elemento = elemento
+        this.baseBruta = baseBruta
         this.elementoPai = elementoPai
         this.tipoConversao = tipoConversao
+        this.baseNumero = baseNumero
     }
 
     //validação do número
     validacaoBin(){
-        const valorBinario = document.querySelector(`#${this.elementoBin}`)
+        const valorBinario = document.querySelector(`#${this.elemento}`)
         let regEx = /2|3|4|5|6|7|8|9/
 
-        if(!Number(valorBinario.value) || valorBinario.value.match(regEx)){
+        if(!Number(valorBinario.value) || valorBinario.value.match(regEx) && this.baseBruta == 2){
             this.limpa()
             return this.mensagemErro("Por Favor! Insira valores númericos (0 e 1).")
-        }else if(valorBinario.value.length > 8){
+        }else if(valorBinario.value.length > 8  && this.baseBruta == 2){
             this.limpa()
             return this.mensagemErro("Por Favor! Digite um número abaixo ou igual a 8 caracteres.")
         }else{
@@ -37,42 +38,54 @@ export class conversorNumerico
     //criação de campo para número válido
     mensagemValida(){
         this.removeMensagem()
-        const valorBin = document.querySelector(`#${this.elementoBin}`)
+        const valorBin = document.querySelector(`#${this.elemento}`)
         const conteudoPai = document.querySelector(`#${this.elementoPai}`)
         const novoElemento = document.createElement('h4')
         novoElemento.setAttribute("id", "binario")
 
-        novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumBinario()}`
-    
+        if(this.baseBruta == 2){
+            novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumBinario()}`
+        }else{
+            novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumDecimal()}`
+        }
         return conteudoPai.append(novoElemento)
     }
 
     //identifica a base e converte o número de binário para outro
     converteNumBinario(){
-        const valorBinario = document.querySelector(`#${this.elementoBin}`).value
-        switch(this.numBase){
+        const valorBinario = document.querySelector(`#${this.elemento}`).value
+        switch(Number(this.baseNumero)){
             case 2:
-                return parseInt(valorBinario,this.numBase)
+                console.log('o')
+                return valorBinario
+            case 10:
+                return parseInt(valorBinario,this.baseBruta)
             case 8:
-                return Number(parseInt(valorBinario, 2)).toString(this.numBase)
             case 16:
-                return Number(parseInt(valorBinario, 2)).toString(this.numBase)
+                return Number(parseInt(valorBinario, 2)).toString(this.baseNumero)
              default:
-            //mensagem temporária
-            return "não existe"
+                return "Base inválida"
         }
     }
 
     //identifica a base e converte o número decimal para outra base
     converteNumDecimal(){
-        const valorBinario = document.querySelector(`#${this.elementoBin}`).value
-        //switch()
+        const valorBinario = document.querySelector(`#${this.elemento}`).value
+        switch(Number(this.baseNumero)){
+            case 2:
+            case 8:
+            case 16:
+                return Number(valorBinario).toString(this.baseNumero)
+            case 10:
+                return valorBinario
+            default:
+                return "Base inválida"
+        }
     }
 
     //remove mensagens anteriores
     removeMensagem(){
         let conteudoPai = document.querySelector(`#${this.elementoPai}`)
-        console.log(conteudoPai)
         if(conteudoPai.childNodes.length > 0){
             for(let child of conteudoPai.children){
                 child.remove()
@@ -82,7 +95,7 @@ export class conversorNumerico
 
     //limpa o input
     limpa(){
-        let valorBinario = document.querySelector(`#${this.elementoBin}`)
+        let valorBinario = document.querySelector(`#${this.elemento}`)
         return valorBinario.value = ""
     }
 }
