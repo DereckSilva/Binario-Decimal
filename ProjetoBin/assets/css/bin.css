@@ -8,7 +8,7 @@ body{
     text-align: center;
     border-radius: 5px;
     width: 600px;
-    top: 12em;
+    top: 8em;
     left: 25em;
     position: relative;
 }
@@ -17,6 +17,8 @@ input{
     outline: none;
     border-bottom: 2px solid rgb(21, 63, 250);
     background-color: transparent;
+    position: relative;
+    top:1em;
 }
 
 input::placeholder{
@@ -24,6 +26,8 @@ input::placeholder{
 }
 
 button{
+    position: relative;
+    top: 1.5em;
     cursor: pointer;
     font-size: 16px;
     padding: 5px;
@@ -41,16 +45,19 @@ button{
     border-radius: 5px;
     margin: 0px auto;
     position: relative;
-    top: 13em;
+    top: 9em;
     left: 25em;
 }
 
 select{
     background-color: transparent;
     border-radius: 5px;
+    border-color: #ffff;
     padding: 5px;
     margin-bottom: 15px;
+    padding: 0.5em;
 }
+
 a{
     text-decoration: none;
     color: rgb(21, 63, 250);
@@ -58,4 +65,8 @@ a{
 }
 a:hover{
     color: rgb(255, 255, 255);
+}
+span{
+    position: relative;
+    top: 0.8em;
 }

@@ -10,18 +10,16 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Conversor de números Binários</h1>
-        <h4>Esse conversor tem objetivo de identificar os números binários e converter para decimal.</h4>
+        <h1>Conversor de números</h1>
+        <h4>Esse conversor tem objetivo de identificar os números binários e decimais<br> e fazer a conversão para o base da preferência do usuário.</h4>
     </header>
     <main id="conteudoMain">  
-        <input type="text" id="valueBin" value="" placeholder="Ex: 011101"><br><br>
-        <button id="buttonEnviaBin">Converter</button><br><br>
         <select id="baseBruta">
             <option value=""></option>
             <option value="2">Binário</option>
             <option value="10">Decimal</option>
         </select>
-
+            <span><img src="https://cdn-icons-png.flaticon.com/32/5166/5166492.png" alt=""></span>
         <select id="baseConversora">
             <option value=""></option>
             <option value="2" class="tipoConvert" data-conv="binário">Binário</option>
@@ -29,7 +27,9 @@
             <option value="8" class="tipoConvert" data-conv="octal">Octal</option>
             <option value="16" class="tipoConvert" data-conv="hexadecimal">Hexadecimal</option>
         </select>
-        <a type="button" id="home" href="./index.html">Home</a>
+        <br>
+        <input type="text" id="valueBin" value="" placeholder="Ex: 011101"><br><br>
+        <button id="buttonEnviaBin">Converter</button><br><br>
         <div id="conteudoPai"></div>
     </main>
     <script src="assets/js/index.js" type="module"></script>

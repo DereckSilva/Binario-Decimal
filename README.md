@@ -19,6 +19,10 @@
 
 - Ideia de Projeto [Bin2Dec](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 
+### Previous
+
+<img src="./ProjetoBin/assets/img/CPT2210212327-702x393.gif">
+
 ### Features
 
 - [x] Conversor Binário para Decimal
