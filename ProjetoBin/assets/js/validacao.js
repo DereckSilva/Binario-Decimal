@@ -43,10 +43,12 @@ export class conversorNumerico
         const novoElemento = document.createElement('h4')
         novoElemento.setAttribute("id", "binario")
 
-        if(this.baseBruta == 2){
+        if(this.baseBruta == 2 && this.baseNumero != ''){
             novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumBinario()}`
-        }else{
+        }else if(this.baseBruta == 10 && this.baseNumero != ''){
             novoElemento.innerText = `O valor ${valorBin.value} em ${this.tipoConversao} é: ${this.converteNumDecimal()}`
+        }else{
+            novoElemento.innerText = ''
         }
         return conteudoPai.append(novoElemento)
     }
