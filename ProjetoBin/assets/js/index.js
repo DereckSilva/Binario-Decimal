@@ -10,7 +10,7 @@ function verificaBases(baseBruta, baseConversora){
         return alert("Nenhuma base foi selecionada.")
     }else if(baseBruta == ""){
         return alert("Escolha a descrição da base inserida.")
-    }else{
+    }else if(baseConversora == ""){
         return alert("Escolha a descrição para a base convertida.")
     }
 }
